@@ -37,7 +37,7 @@ My research interest is BEV perception, mage/video generation and so on.
 
 [**arXiv**](https://arxiv.org/abs/2407.06109)/[**code**](https://github.com/LabShuHangGU/PerlDiff)/[**bibtex**]([https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=tyYxiXoAAAAJ&citation_for_view=tyYxiXoAAAAJ:u5HHmVD_uO8C](https://scholar.google.com/scholar_lookup?arxiv_id=2407.06109))
 
-- Our PerlDiff employs 3D geometric priors to guide the generation of street view images with precise object-level control within the network learning process, resulting in a more robust and controllable output. Moreover, it demonstrates superior controllability compared to alternative layout control methods. Empirical results justify that our PerlDiff markedly enhances the precision of generation on the NuScenes and KITTI.
+- Our PerlDiff uses 3D geometric priors for precise object-level control in generating street view images, leading to more robust and controllable outputs. It shows superior controllability compared to other layout control methods. Empirical results demonstrate that PerlDiff significantly improves generation precision on NuScenes and KITTI.
 </div>
 </div>
 
