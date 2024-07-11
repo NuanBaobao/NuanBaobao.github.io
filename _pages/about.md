@@ -24,7 +24,7 @@ My research interest is BEV perception, image/video generation and so on. My Goo
 **If you have any suggestions for cooperation in these filed, please feel free to contact me.**
 
 # 🔥 News
-- *2024.07*: &nbsp;🎉🎉 Our work "[PerlDiff: Controllable Street View Synthesis Using Perspective-Layout Diffusion Models](https://arxiv.org/abs/2407.06109)" is published on Arxiv. 
+- *2024.07*: &nbsp;🎉🎉 Our work "[PerlDiff: Controllable Street View Synthesis Using Perspective-Layout Diffusion Models](https://arxiv.org/abs/2407.06109)" is published on arXiv. 
 
 # 📝 Publications 
 
