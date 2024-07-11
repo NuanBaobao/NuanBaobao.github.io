@@ -19,7 +19,7 @@ redirect_from:
 
 Hi！I am a first year Master student at University of Electronic Science and Technology of China. My advisor is <a href='https://scholar.google.com/citations?user=-kSTt40AAAAJ&hl=zh-CN'>Shuhang Gu</a>. I received the B.S. degree from the ShangDong University in 2023.  
 
-My research interest is BEV perception, mage/video generation and so on. 
+My research interest is BEV perception, mage/video generation and so on. My Google Scholar is <a href='https://scholar.google.com/citations?hl=zh-CN&user=tyYxiXoAAAAJ'>Jinhua Zhang</a>.
 
 **If you have any suggestions for cooperation in these filed, please feel free to contact me.**
 
