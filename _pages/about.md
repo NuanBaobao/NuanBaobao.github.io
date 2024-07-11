@@ -44,9 +44,9 @@ My research interests include BEV perception, image/video generation, and relate
 - `arXiv` [PerlDiff: Controllable Street View Synthesis Using Perspective-Layout Diffusion Models](https://arxiv.org/abs/2407.06109), **Jinhua Zhang**, Hualian Sheng, et al. 
 
 # 📖 Educations
-- *2023.06 - now*, Master, <a href='https://www.uestc.edu.cn/'> UESTC</a>, Chengdu.
-- *2021.03 - 2023.06*, Undergraduate, <a href='https://www.cs.sdu.edu.cn/'>School of Computer Science and Technology, Shandong University</a>, Qindao.
-- *2019.09 - 2021.3*, Undergraduat, <a href='https://www.cmse.sdu.edu.cn/'>School of Materials Science and Engineering, Shandong University</a>, Jinan.
+- *2023.06 - now*, Master, School of Computer Science and Engineering, <a href='https://www.scse.uestc.edu.cn/'> UESTC</a>, Chengdu.
+- *2021.03 - 2023.06*, Undergraduate, <a href='https://www.cs.sdu.edu.cn/'>School of Computer Science and Technology</a>, Shandong University, Qindao.
+- *2019.09 - 2021.3*, Undergraduat, <a href='https://www.cmse.sdu.edu.cn/'>School of Materials Science and Engineering</a>, Shandong University, Jinan.
 - *2016.09 - 2019.06*, <a href='https://www.nwnusch.cn/'>The High School Attached to Northwest Normal University</a>, Lanzhou.
 
 # 💻 Internships
