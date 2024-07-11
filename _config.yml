@@ -23,8 +23,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Jinhua Zhang"
   avatar           : "images/liuhua.jpg"
-  bio              : "UESTC"
-  location         : "Chengdu, Sichuan, China"
+  bio              : "<a href='https://www.scse.uestc.edu.cn/'> UESTC</a>"
+  location         : "Chengdu, China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?hl=zh-CN&user=tyYxiXoAAAAJ"
