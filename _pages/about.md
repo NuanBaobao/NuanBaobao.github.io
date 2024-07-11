@@ -49,6 +49,6 @@ My research interest is BEV perception, image/video generation and so on. My Goo
 - *2016.09 - 2019.06*, <a href='https://www.nwnusch.cn/'>The High School Attached to Northwest Normal University</a>, Lanzhou.
 
 # 💻 Internships
-- *2023.10 - now*, Alibaba Cloud, Hangzhou, China.
+- *2023.11 - now*, Alibaba Cloud, Hangzhou, China.
 
 
