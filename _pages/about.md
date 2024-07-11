@@ -49,7 +49,7 @@ My research interests include BEV perception, image/video generation, and relate
 # 📖 Educations
 - *2023.06 - now*, Master, <a href='https://www.scse.uestc.edu.cn/'> School of Computer Science and Engineering</a>, UESTC, Chengdu.
 - *2021.03 - 2023.06*, Undergraduate, <a href='https://www.cs.sdu.edu.cn/'>School of Computer Science and Technology</a>, Shandong University, Qindao.
-- *2019.09 - 2021.3*, Undergraduat, <a href='https://www.cmse.sdu.edu.cn/'>School of Materials Science and Engineering</a>, Shandong University, Jinan.
+- *2019.09 - 2021.03*, Undergraduat, <a href='https://www.cmse.sdu.edu.cn/'>School of Materials Science and Engineering</a>, Shandong University, Jinan.
 - *2016.09 - 2019.06*, <a href='https://www.nwnusch.cn/'>The High School Attached to Northwest Normal University</a>, Lanzhou.
 
 
