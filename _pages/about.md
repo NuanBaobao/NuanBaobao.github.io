@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi！I am a first year Master student at University of Electronic Science and Technology of China. My advisor is <a href='https://scholar.google.com/citations?user=-kSTt40AAAAJ&hl=zh-CN'>Shuhang Gu</a>. I received the B.S. degree from the <a href='https://www.cs.sdu.edu.cn/'>Shangdong University</a> in 2023.  
+Hi！I am a first year Master student at University of Electronic Science and Technology of China (UESTC). My advisor is <a href='https://scholar.google.com/citations?user=-kSTt40AAAAJ&hl=zh-CN'>Shuhang Gu</a>. I received the B.S. degree from the <a href='https://www.cs.sdu.edu.cn/'>Shangdong University</a> in 2023.  
 
 My research interest is BEV perception, image/video generation and so on. My Google Scholar is <a href='https://scholar.google.com/citations?hl=zh-CN&user=tyYxiXoAAAAJ'>Jinhua Zhang</a>.
 
