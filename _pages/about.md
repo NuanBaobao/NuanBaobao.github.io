@@ -41,7 +41,10 @@ My research interests include BEV perception, image/video generation, and relate
 </div>
 </div>
 
-- `arXiv` [PerlDiff: Controllable Street View Synthesis Using Perspective-Layout Diffusion Models](https://arxiv.org/abs/2407.06109), **Jinhua Zhang**, Hualian Sheng, et al. 
+- `arXiv` [PerlDiff: Controllable Street View Synthesis Using Perspective-Layout Diffusion Models](https://arxiv.org/abs/2407.06109), **Jinhua Zhang**, Hualian Sheng, et al.
+
+# 💻 Internships
+- *2023.11 - now*, Alibaba Cloud, Hangzhou, China.
 
 # 📖 Educations
 - *2023.06 - now*, Master, <a href='https://www.scse.uestc.edu.cn/'> School of Computer Science and Engineering</a>, UESTC, Chengdu.
@@ -49,7 +52,6 @@ My research interests include BEV perception, image/video generation, and relate
 - *2019.09 - 2021.3*, Undergraduat, <a href='https://www.cmse.sdu.edu.cn/'>School of Materials Science and Engineering</a>, Shandong University, Jinan.
 - *2016.09 - 2019.06*, <a href='https://www.nwnusch.cn/'>The High School Attached to Northwest Normal University</a>, Lanzhou.
 
-# 💻 Internships
-- *2023.11 - now*, Alibaba Cloud, Hangzhou, China.
+
 
 
