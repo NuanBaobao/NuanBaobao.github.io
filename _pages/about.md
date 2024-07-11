@@ -35,9 +35,20 @@ My research interest is BEV perception, image/video generation and so on. My Goo
 
 **Jinhua Zhang**,  Hualian Sheng, Sijia Cai, Bing Deng, Qiao Liang, Wen Li, Ying Fu, Jieping Ye, Shuhang Gu
 
-[**arXiv**](https://arxiv.org/abs/2407.06109)/[**code**](https://github.com/LabShuHangGU/PerlDiff)/[**bibtex**]([https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=tyYxiXoAAAAJ&citation_for_view=tyYxiXoAAAAJ:u5HHmVD_uO8C](https://scholar.google.com/scholar_lookup?arxiv_id=2407.06109))
+[**Project**](https://github.com/LabShuHangGU/PerlDiff/) <strong><span class='show_paper_citations' data='4FA6C0AAAAAJ:qjMakFHDy7sC'></span></strong>
 
 - PerlDiff uses **3D geometric priors** for precise **object-level control** in street view image generation, offering superior controllability and significantly improving precision on NuScenes and KITTI.
 </div>
 </div>
+
+- `arXiv` [PerlDiff: Controllable Street View Synthesis Using Perspective-Layout Diffusion Models](https://arxiv.org/abs/2407.06109), **Jinhua Zhang**, Hualian Sheng, et al. 
+
+# 📖 Educations
+- *2023.06 - now*, Master, <a href='https://www.uestc.edu.cn/'> UESTC</a>, Chengdu.
+- *2019.09 - 2023.06*, Undergraduate, School of Computer Science and Technology, <a href='https://www.cs.sdu.edu.cn/'>Shandong University</a>, Qindao.
+- *2016.09 - 2019.06*, <a href='https://www.nwnusch.cn/'>The High School Attached to Northwest Normal University</a>, Lanzhou.
+
+# 💻 Internships
+- *2023.10 - now*, Alibaba Cloud, Hangzhou, China.
+
 
