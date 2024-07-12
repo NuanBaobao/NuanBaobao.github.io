@@ -35,7 +35,7 @@ My research interests include BEV perception, image/video generation, and relate
 
 **Jinhua Zhang**,  Hualian Sheng, Sijia Cai, Bing Deng, Qiao Liang, Wen Li, Ying Fu, Jieping Ye, Shuhang Gu
 
-[**Project**](https://perldiff.github.io/) [**Code**](https://github.com/LabShuHangGU/PerlDiff/) <strong><span class='show_paper_citations' data='4FA6C0AAAAAJ:qjMakFHDy7sC'></span></strong>
+[**Project**](https://perldiff.github.io/) [**Code**](https://github.com/LabShuHangGU/PerlDiff/) [**Blog**](https://mp.weixin.qq.com/s/7YcC-_9jSKsCMaN0e1FHmw) <strong><span class='show_paper_citations' data='4FA6C0AAAAAJ:qjMakFHDy7sC'></span></strong>
 
 - PerlDiff uses **3D geometric priors** for precise **object-level control** in street view image generation, offering superior controllability and significantly improving precision on NuScenes and KITTI.
 </div>
