@@ -1,0 +1,447 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Jinhua Zhang（张进华）</title>
+
+    <meta name="author" content="jinhua zhang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Jinhua Zhang
+                </p>
+                <p>I am a a Ph.D. candidate at <a href="https://diggers.ai/people/">DIG group</a> at <a href="https://en.uestc.edu.cn/">University of Electronic Science and Technology of China (UESTC)</a>, where I am advised by Prof.<a href="https://scholar.google.com/citations?user=-kSTt40AAAAJ&hl=zh-CN">Shuhang Gu</a>.
+                </p>
+                <p>I received my bachelor's degree in Computer Science from <a href="https://www.cs.sdu.edu.cn/">Shandong University</a> in 2023.
+                </p>
+                <p>
+                  From 2023 to 2025, I worked as a research intern at Alibaba Cloud, mentored by <a href="https://scholar.google.com/citations?user=LMVeRVAAAAAJ&hl=zh-CN&oi=sra">Sijia Cai</a> and 
+                  <a href="https://scholar.google.com/citations?user=73JaDUQAAAAJ&hl=zh-CN&oi=sr">Hualian Sheng</a>.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:stan@robots.ox.ac.uk">Email</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=kPJKnRIAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://twitter.com/StanSzymanowicz">Twitter</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/szymanowiczs/">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/profile_pic.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/profile_pic.jpeg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  I am interested in generative modelling of the 3D world.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    
+    <tr onmouseout="bolt3d_stop()" onmouseover="bolt3d_start()"  bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='bolt3d_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="bolt3d-static/img_1_140.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+
+          </video></div>
+          <img src='bolt3d-static/bolt3d_image.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function bolt3d_start() {
+            document.getElementById('bolt3d_image').style.opacity = "1";
+          }
+
+          function bolt3d_stop() {
+            document.getElementById('bolt3d_image').style.opacity = "0";
+          }
+          bolt3d_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://szymanowiczs.github.io/bolt3d">
+          <span class="papertitle">Bolt3D: Generating 3D Scenes in Seconds</span>
+        </a>
+        <br>
+        <strong>Stanislaw Szymanowicz</strong>,
+        <a href="https://jasonyzhang.com">Jason Y. Zhang</a>,
+        <a href="https://pratulsrinivasan.github.io">Pratul Srinivasan</a>,
+        <a href="https://ruiqigao.github.io">Ruiqi Gao</a>,
+        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>,
+        <a href="https://holynski.org">Aleksander Holynski</a>,
+        <a href="https://ricardomartinbrualla.com">Ricardo Martin-Brualla</a>,
+        <a href="https://jonbarron.info">Jonathan T. Barron</a>,
+        <a href="https://henzler.github.io">Philipp Henzler</a>
+        <br>
+        <em>ICCV</em>, 2025
+        <br>
+        <a href="https://szymanowiczs.github.io/bolt3d">project page, with an interactive viewer in Chrome</a>
+        /
+        <a href="https://szymanowiczs.github.io/bolt3d">arXiv</a>
+        <p></p>
+        <p>
+        Bolt3D allows feed-forward 3D scene generation in 6.25s on a single GPU.
+        Our latent diffusion model directly outputs 3D Gaussians, and is trained on a large-scale dataset of reconstructed 3D scenes.
+        </p>
+      </td>
+    </tr>
+    
+    <tr onmouseout="flash3d_stop()" onmouseover="flash3d_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='flash3d_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="flash3d-static/videos/website_video.mov" type="video/mp4">
+          Your browser does not support the video tag.
+
+          </video></div>
+          <img src='flash3d-static/images/website_teaser_image.jpeg' width="160">
+        </div>
+        <script type="text/javascript">
+          function flash3d_start() {
+            document.getElementById('flash3d_image').style.opacity = "1";
+          }
+
+          function flash3d_stop() {
+            document.getElementById('flash3d_image').style.opacity = "0";
+          }
+          flash3d_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://www.robots.ox.ac.uk/~vgg/research/flash3d/">
+          <span class="papertitle">Flash3D: Feed-Forward Generalisable Scene Reconstruction from a Single Image</span>
+        </a>
+        <br>
+        <strong>Stanislaw Szymanowicz</strong>*,
+        <a href="https://eldar.insafutdinov.com">Eldar Insafutdinov</a>*,
+        <a href="https://chuanxiaz.com">Chuanxia Zheng</a>*,
+        <a href="https://sites.google.com/view/djcampbell">Dylan Campbell</a>,
+        <a href="https://www.robots.ox.ac.uk/~joao/#about">Joao Henriques</a>,
+        <a href="https://chrirupp.github.io">Christian Rupprecht</a>,
+        <a href="https://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a>
+        <br>
+        <em>3DV</em>, 2025
+        <br>
+        <a href="https://github.com/eldar/flash3d">code</a>
+        /
+        <a href="https://www.robots.ox.ac.uk/~vgg/research/flash3d/">project page</a>
+        /
+        <!-- <a href="https://huggingface.co/spaces/szymanowiczs/splatter_image">demo</a>
+        / -->
+        <a href="https://arxiv.org/abs/2406.04343">arXiv</a>
+        <p></p>
+        <p>
+        We show that leveraging a Monocular Depth Estimator and a Layered Representation allows building generalizable and efficient 3D scene reconstructors.
+        </p>
+      </td>
+    </tr>
+        
+    <tr onmouseout="splatter_image_stop()" onmouseover="splatter_image_start()"  bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='splatter_image_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="splatter-image-static/videos/loop_teddybear.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+
+          </video></div>
+          <img src='splatter-image-static/videos/loop_source_teddybear.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function splatter_image_start() {
+            document.getElementById('splatter_image_image').style.opacity = "1";
+          }
+
+          function splatter_image_stop() {
+            document.getElementById('splatter_image_image').style.opacity = "0";
+          }
+          splatter_image_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://szymanowiczs.github.io/splatter-image">
+          <span class="papertitle">Splatter Image: Ultra-Fast Single-View 3D Reconstruction</span>
+        </a>
+        <br>
+        <strong>Stanislaw Szymanowicz</strong>,
+        <a href="https://chrirupp.github.io">Chrisitian Rupprecht</a>,
+        <a href="https://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a>
+        <br>
+        <em>CVPR</em>, 2024
+        <br>
+        <a href="https://github.com/szymanowiczs/splatter-image">code</a>
+        /
+        <a href="https://szymanowiczs.github.io/splatter-image">project page</a>
+        /
+        <a href="https://huggingface.co/spaces/szymanowiczs/splatter_image">demo</a>
+        /
+        <a href="https://arxiv.org/abs/2312.13150">arXiv</a>
+        <p></p>
+        <p>
+        We design a fast (38FPS), simple, 2D network for single-view 3D reconstruction that represents shapes with 3D Gaussians.
+        As a result, it can leverage Gaussian Splatting for rendering (588FPS), achieves state-of-the-art quality in several cases and is trains on just a single GPU.
+        </p>
+      </td>
+    </tr>
+
+    <!--<tr onmouseout="viewset_diff_stop()" onmouseover="viewset_diff_start()"  bgcolor="#ffffd0"> -->
+    <tr onmouseout="viewset_diff_stop()" onmouseover="viewset_diff_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='viewset_diff_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="viewset-diffusion-static/results/0_view/cars_0_view_4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+
+            </video></div>
+            <img src='images/generation_viewset_diffusion.png' width="160">
+          </div>
+          <script type="text/javascript">
+            function viewset_diff_start() {
+              document.getElementById('viewset_diff_image').style.opacity = "1";
+            }
+
+            function viewset_diff_stop() {
+              document.getElementById('viewset_diff_image').style.opacity = "0";
+            }
+            viewset_diff_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://szymanowiczs.github.io/viewset-diffusion">
+            <span class="papertitle">Viewset Diffusion: (0-)Image-Conditioned 3D Generation from 2D Data</span>
+          </a>
+          <br>
+          <strong>Stanislaw Szymanowicz</strong>,
+          <a href="https://chrirupp.github.io">Chrisitian Rupprecht</a>,
+          <a href="https://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a>
+          <br>
+          <em>ICCV</em>, 2023
+          <br>
+          <a href="https://github.com/szymanowiczs/viewset-diffusion">code</a>
+          /
+          <a href="https://szymanowiczs.github.io/viewset-diffusion">project page</a>
+          /
+          <a href="https://arxiv.org/abs/2306.07881">arXiv</a>
+          /
+          <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Szymanowicz_Viewset_Diffusion_0-Image-Conditioned_3D_Generative_Models_from_2D_Data_ICCV_2023_paper.pdf">paper</a>
+          <p></p>
+          <p>
+          Novel formulation of the denoising function in Diffusion Models lets us train 3D generative models from 2D data only. Our models can perform both few-view 3D reconstruction and 3D generation. 
+          </p>
+        </td>
+      </tr>
+      
+      <tr onmouseout="head_avatars_stop()" onmouseover="head_avatars_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='head_avatars_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/head.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/head_avatars_teaser.png' width="160">
+          </div>
+          <script type="text/javascript">
+            function head_avatars_start() {
+              document.getElementById('head_avatars_image').style.opacity = "1";
+            }
+
+            function head_avatars_stop() {
+              document.getElementById('head_avatars_image').style.opacity = "0";
+            }
+            head_avatars_stop()
+          </script>
+        </td>
+        
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2210.11594">
+            <span class="papertitle">Photo-realistic 360◦ Head Avatars in the Wild</span>
+          </a>
+          <br>
+          <strong>Stanislaw Szymanowicz</strong>,
+          Virginia Estellers,
+          <a href="https://www.microsoft.com/en-us/research/people/tabaltru/">Tadas Baltrusaitis</a>,
+          <a href="https://www.microsoft.com/en-us/research/people/matjoh/">Matthew Johnson</a>
+          <br>
+          <em>ECCV Workshop on Computer Vision for Metaverse</em>, 2022
+          <br>
+          <a href="https://arxiv.org/abs/2210.11594">arXiv</a>
+          <p></p>
+          <p>
+          We unlock training NeRFs of 360◦ human heads from mobile phone captures. 
+          Synthetically-trained face keypoint detector allows to get a rough camera pose estimate which is then refined in the optimization process. 
+          </p>
+        </td>
+      </tr>
+
+      <tr>         
+        <td style="padding:20px;width:25%;vertical-align:middle" >
+          <img src='images/voltemorph_teaser.png' width="160">
+        </td>
+                
+
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/pdf/2208.00949.pdf">
+            <span class="papertitle">VolTeMorph: Realtime, Controllable and Generalisable Animation of Volumetric Representations</span>
+          </a>
+          <br>
+          
+          <a href="http://stephangarbin.com">Stephan Garbin*</a>, 
+          Marek Kowalski*, Virginia Estellers*, 
+          <strong>Stanislaw Szymanowicz*</strong>,
+          Shideh Rezaeifar, <a href="https://www.microsoft.com/en-us/research/people/jinshen/">Jingjing Shen</a>, 
+          <a href="https://www.microsoft.com/en-us/research/people/matjoh/">Matthew Johnson</a>,
+          Julien Valentin
+          <br>
+          <em>arXiv</em>, 2022
+          <br>
+          <a href="https://arxiv.org/pdf/2208.00949.pdf">arXiv</a>
+          <p></p>
+          <p>We can controllably animate Neural Radiance Fields by deforming tetrahedral cages. Tetrahedral connectivity allows us to run the animations in real-time.</p>
+        </td>
+      </tr>
+
+
+
+      <tr>         
+        <td style="padding:20px;width:25%;vertical-align:middle" >
+          <img src='images/vqunet_teaser.png' width="160">
+        </td>
+                
+
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/pdf/2112.05585v1.pdf">
+            <span class="papertitle">Discrete neural representations for explainable anomaly detection</span>
+          </a>
+          <br>
+          <strong>Stanislaw Szymanowicz</strong>,
+          <a href="http://www.jjcvision.com">James Charles</a>, 
+          <a href="https://mi.eng.cam.ac.uk/~cipolla/">Roberto Cipolla</a>
+          <br>
+          <em>WACV</em>, 2022
+          <br>
+          <a href="http://jjcvision.com/projects/vqunet_anomally_detection.html">project page</a>
+          /
+          <a href="https://youtu.be/3KLRi0biQvY">video</a>
+          /
+          <a href="https://arxiv.org/pdf/2112.05585v1.pdf">arXiv</a>
+          <p></p>
+          <p>We introduce an architecture for improved explainability of anomaly detection in CCTV videos.</p>
+        </td>
+      </tr>
+
+
+
+      <tr>         
+        <td style="padding:20px;width:25%;vertical-align:middle" >
+          <img src='images/xman_teaser.png' width="160">
+        </td>
+                
+
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="http://mi.eng.cam.ac.uk/~cipolla/publications/inproceedings/2021-CVPR-XMAN-anomaly-detection.pdf">
+            <span class="papertitle">X-MAN: Explaining multiple sources of anomalies in video</span>
+          </a>
+          <br>
+          <strong>Stanislaw Szymanowicz</strong>,
+          <a href="http://www.jjcvision.com">James Charles</a>, 
+          <a href="https://mi.eng.cam.ac.uk/~cipolla/">Roberto Cipolla</a>
+          <br>
+          <em>CVPR Workshop on Fair and Trusted Computer Vision</em>, 2021
+          <br>
+          <a href="http://jjcvision.com/projects/explaining_anomalies.html">project page</a>
+          /
+          <a href="https://www.youtube.com/watch?v=4fsQqNU-uNA">demo video</a>
+          /
+          <a href="http://mi.eng.cam.ac.uk/~cipolla/publications/inproceedings/2021-CVPR-XMAN-anomaly-detection.pdf">paper</a>
+          <p></p>
+          <p>We introduce a dataset and a method for detecting and explaining anomalies in CCTV videos.</p>
+        </td>
+      </tr>
+          </tbody></table>
+
+          <!--
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Miscellanea</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+            
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
+              <td width="75%" valign="center">
+                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
+          <br>
+                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
+                <br>
+                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Longuet-Higgins Award Committee Member, CVPR 2021</a>
+                <br>
+                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
+                <br>
+                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="images/cs188.jpg" alt="cs188">
+              </td>
+              <td width="75%" valign="center">
+                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
+                <br>
+                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
+                <br>
+                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
+              </td>
+            </tr>
+            
+
+            <tr>
+              <td align="center" style="padding:20px;width:25%;vertical-align:middle">
+                <h2>Basically <br> Blog Posts</h2>
+              </td>
+              <td width="75%" valign="middle">
+                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
+                <br>
+                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
+                <br>
+                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
+                <br>
+                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
+              </td>
+            </tr>
+            
+            
+          </tbody></table>-->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:middle;font-size:small;">
+                  Thank you to Jon Barron for the <a href="https://github.com/jonbarron/jonbarron_website">source code</a> for the website!
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td> 
+      </tr>
+    </table>
+  </body>
+</html>
