@@ -64,7 +64,8 @@
             🔥 <strong>3.0&times; Memory Efficiency & KV-Cache Free Inference.</strong>
             We propose <strong>Markovian Visual AutoRegressive modeling (MVAR)</strong>, which introduces scale and
             spatial Markov assumptions to mitigate redundancy in visual generation. By reducing complexity from O(N^2)
-            to O(N&times;k), MVAR enables parallel training on just eight RTX 4090s and achieves state-of-the-art performance
+            to O(N&times;k), MVAR enables parallel training on just eight RTX 4090s and achieves state-of-the-art
+            performance
             on ImageNet.
         </p>
     </div>
@@ -83,7 +84,7 @@
         <hr />
         <div class="container">
             <p align="center">
-                <img src="mvar-static/mvar-method.png" style="width: 85%" />
+                <img src="mvar-static/mvar-method.png" style="width: 100%" />
             </p>
         </div>
         <p>
@@ -95,7 +96,8 @@
             adjacent preceding scale, enabling <strong>parallel training</strong>.
             <br>
             (2) <strong>Spatial-Markov attention</strong>: restricting each token's attention to a localized
-            neighborhood on adjacent scales, reducing complexity to <strong>linear O(N&times;k)</strong> and eliminating the
+            neighborhood on adjacent scales, reducing complexity to <strong>linear O(N&times;k)</strong> and eliminating
+            the
             need for KV cache during inference.
         </p>
     </div>
@@ -111,7 +113,7 @@
         </p>
         <p>
             <strong>(a) Scale-Markovian Trajectory:</strong> Unlike previous methods that depend on all prior scales
-            , MVAR assumes that the current scale only depends on its immediate predecessor. 
+            , MVAR assumes that the current scale only depends on its immediate predecessor.
             This decoupling allows us to train all scales in parallel rather than sequentially,
             significantly lowering GPU memory consumption.
             <br /><br />
@@ -154,7 +156,7 @@
                 are selected samples generated on ImageNet 256&times;256, showcasing the diversity and structural
                 coherence of our Markovian modeling.</li>
             <p align="center">
-                <img src="mvar-static/visual_results.png" style="width: 100%" />
+                <img src="mvar-static/visual_results.png" style="width: 80%" />
             </p>
         </ul>
     </div>
@@ -167,12 +169,13 @@
         <hr class="hr-tight" />
         <pre
             style="background:#f6f6f6; padding:15px; border-radius:10px; font-size:14px; white-space:pre-wrap; font-family: 'Courier New', Courier, monospace;">
-@article{zhang2025mvar,
-  title   = {MVAR: Visual Autoregressive Modeling with Scale and Spatial Markovian Conditioning},
-  author  = {Zhang, Jinhua and Long, Wei and Han, Minghao and You, Weiyi and Gu, Shuhang},
-  journal = {arXiv preprint arXiv:2505.12742},
-  year    = {2025}
-}</pre>
+        @article{zhang2025mvar,
+        title   = {MVAR: Visual Autoregressive Modeling with Scale and Spatial Markovian Conditioning},
+        author  = {Zhang, Jinhua and Long, Wei and Han, Minghao and You, Weiyi and Gu, Shuhang},
+        journal = {arXiv preprint arXiv:2505.12742},
+        year    = {2025}
+        }
+        </pre>
     </div>
 
     <br /><br />
