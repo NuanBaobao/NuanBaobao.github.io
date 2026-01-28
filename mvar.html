@@ -1,136 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="MVAR: Markovian Visual AutoRegressive modeling" />
-        <meta name="author" content="Jinhua Zhang" />
 
-        <title>MVAR</title>
-        <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous"
-        />
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="MVAR: Markovian Visual AutoRegressive modeling" />
+    <meta name="author" content="Jinhua Zhang" />
 
-        <style type="text/css">
-            .container {
-                zoom: 1;
-                margin-left: auto;
-                margin-right: auto;
-                vertical-align: middle;
-                width: 100%;
-                max-width: 900px;
-                font-size: 18px;
-            }
-            .container_abs {
-                max-width: 850px;
-                font-size: 17px;
-                line-height: 1.6;
-            }
-            .papertitle {
-                font-weight: bold;
-            }
-        </style>
-    </head>
+    <title>MVAR</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
-    <body>
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container" align="center">
-                <h2>MVAR: Visual Autoregressive Modeling with</h2>
-                <h2>Scale and Spatial Markovian Conditioning</h2>
-                <h4><i>ICLR 2026</i></h4>
-                <p>
-                    <a href="https://NuanBaobao.github.io/">Jinhua Zhang</a>,&nbsp;
-                    <a href="https://scholar.google.com/citations?user=CsVTBJoAAAAJ">Wei Long</a>,&nbsp;
-                    <a href="https://scholar.google.com/citations?hl=en&user=IqrXj74AAAAJ">Minghao Han</a>,&nbsp;
-                    <a href="https://scholar.google.com/citations?user=q4uALoAAAAAJ">Weiyi You</a>,&nbsp;
-                    <a href="https://shuhanggu.github.io/">Shuhang Gu</a><sup>*</sup>
-                    <br />
-                    University of Electronic Science and Technology of China&nbsp;&nbsp;
-                    <br><sup>*</sup>Corresponding Author
-                </p>
-                <h5>
-                    <a href="https://arxiv.org/abs/2505.12742">[Paper]</a>&nbsp;
-                    <a href="https://github.com/CVL-UESTC/MVAR">[Code]</a>&nbsp;
-                </h5>
-            </div>
-        </div>
+    <style type="text/css">
+        .container {
+            zoom: 1;
+            margin-left: auto;
+            margin-right: auto;
+            vertical-align: middle;
+            width: 100%;
+            max-width: 900px;
+            font-size: 18px;
+        }
 
-        <div class="container container_abs">
-            <h3>TL;DR: </h3>
+        .container_abs {
+            max-width: 850px;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .papertitle {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container" align="center">
+            <h2>MVAR: Visual Autoregressive Modeling with</h2>
+            <h2>Scale and Spatial Markovian Conditioning</h2>
+            <h4><i>ICLR 2026</i></h4>
             <p>
-                🔥 <strong>3.0&times; Memory Efficiency & KV-Cache Free Inference.</strong>
-                We propose <strong>Markovian Visual AutoRegressive modeling (MVAR)</strong>, which introduces scale and spatial Markov assumptions to mitigate redundancy in visual generation. By reducing complexity from $O(N^2)$ to $O(Nk)$, MVAR enables parallel training on just eight RTX 4090s and achieves state-of-the-art performance on ImageNet.
-            </p>
-        </div>
-
-        <div class="container">
-            <p align="center">
-                <img src="mvar-static/mvar-result.png" style="width: 100%"/>
-            </p>
-        </div>
-
-        <br />
-        <div class="container container_abs">
-            <div align="center"><h2>Abstract</h2></div>
-            <hr />
-                <div class="container">
-            <p align="center">
-                <img src="mvar-static/mvar-method.png" style="width: 85%"/>
-            </p>
-        </div>
-            <p>
-                Conventional visual autoregressive methods exhibit scale and spatial redundancy by conditioning each scale on all previous scales and requiring each token to attend to all preceding ones. We propose <strong>MVAR</strong>, a novel framework that introduces:
-                <br>
-                (1) <strong>Scale-Markov trajectory</strong>: predicting the next scale using only features from the adjacent preceding scale, enabling <strong>parallel training</strong>.
-                <br>
-                (2) <strong>Spatial-Markov attention</strong>: restricting each token's attention to a localized neighborhood on adjacent scales, reducing complexity to <strong>linear $O(Nk)$</strong> and eliminating the need for KV cache during inference.
-            </p>
-        </div>
-
-        <br />
-        <div class="container">
-            <div align="center"><h2>Method</h2></div>
-            <hr />
-            <p align="center">
-                <img src="mvar-static/mvar-framework.png" style="width: 90%"/>
-            </p>
-            <p>
-                <strong>(a) Scale-Markovian Trajectory:</strong> Unlike previous methods that depend on all prior scales ($R_1, ..., R_{k-1}$), MVAR assumes that the current scale only depends on its immediate predecessor ($R_{k-1}$). This decoupling allows us to train all scales in parallel rather than sequentially, significantly lowering GPU memory consumption.
-                <br /><br />
-                <strong>(b) Spatial-Markovian Attention:</strong> We restrict the receptive field of each visual token to a localized $k \times k$ neighborhood at the corresponding position of the adjacent scale. This sparse attention mechanism avoids the quadratic explosion of global self-attention while effectively capturing necessary spatial priors.
-                <br /><br />
-                <strong>(c) KV-Cache Free Inference:</strong> Due to the Markovian nature of our spatial attention, the model does not need to store long-term token dependencies. This allows for extremely memory-efficient sampling without the heavy overhead of Key-Value caches.
-            </p>
-        </div>
-
-        <br />
-        <div class="container">
-            <div align="center"><h2>Experimental Results</h2></div>
-            <hr />
-            <ul>
-                <li><strong>State-of-the-Art Performance:</strong> MVAR achieves comparable or superior FID scores on ImageNet 256x256 compared to VAR and other diffusion-based models.</li>
-                <li><strong>Efficiency:</strong> MVAR reduces the average GPU memory footprint by <strong>3.0&times;</strong>, making the training of large-scale generative models accessible on consumer-grade hardware like RTX 4090.</li>
-            </ul>
-            <p align="center">
-                <img src="imgs/results_table.png" style="width: 80%"/>
-            </p>
-        </div>
-
-        <br /><br />
-        <div class="container">
-            <div align="center"><h2>References</h2></div>
-            <hr />
-            <p>
-                [1] Tian, K., et al. "Visual autoregressive modeling: Scalable image generation via next-scale prediction." NeurIPS 2024.
+                <a href="https://NuanBaobao.github.io/">Jinhua Zhang</a>,&nbsp;
+                <a href="https://scholar.google.com/citations?user=CsVTBJoAAAAJ">Wei Long</a>,&nbsp;
+                <a href="https://scholar.google.com/citations?hl=en&user=IqrXj74AAAAJ">Minghao Han</a>,&nbsp;
+                <a href="https://scholar.google.com/citations?user=q4uALoAAAAAJ">Weiyi You</a>,&nbsp;
+                <a href="https://shuhanggu.github.io/">Shuhang Gu</a><sup>*</sup>
                 <br />
-                [2] Vaswani, A. "Attention is all you need." NeurIPS 2017.
+                University of Electronic Science and Technology of China&nbsp;&nbsp;
+                <br><sup>*</sup>Corresponding Author
+            </p>
+            <h5>
+                <a href="https://arxiv.org/abs/2505.12742">[Paper]</a>&nbsp;
+                <a href="https://github.com/CVL-UESTC/MVAR">[Code]</a>&nbsp;
+            </h5>
+        </div>
+    </div>
+
+    <div class="container container_abs">
+        <h3>TL;DR: </h3>
+        <p>
+            🔥 <strong>3.0&times; Memory Efficiency & KV-Cache Free Inference.</strong>
+            We propose <strong>Markovian Visual AutoRegressive modeling (MVAR)</strong>, which introduces scale and
+            spatial Markov assumptions to mitigate redundancy in visual generation. By reducing complexity from $O(N^2)$
+            to $O(Nk)$, MVAR enables parallel training on just eight RTX 4090s and achieves state-of-the-art performance
+            on ImageNet.
+        </p>
+    </div>
+
+    <div class="container">
+        <p align="center">
+            <img src="mvar-static/mvar-result.png" style="width: 100%" />
+        </p>
+    </div>
+
+    <br />
+    <div class="container container_abs">
+        <div align="center">
+            <h2>Abstract</h2>
+        </div>
+        <hr />
+        <div class="container">
+            <p align="center">
+                <img src="mvar-static/mvar-method.png" style="width: 85%" />
             </p>
         </div>
+        <p>
+            Conventional visual autoregressive methods exhibit scale and spatial redundancy by conditioning each scale
+            on all previous scales and requiring each token to attend to all preceding ones. We propose
+            <strong>MVAR</strong>, a novel framework that introduces:
+            <br>
+            (1) <strong>Scale-Markov trajectory</strong>: predicting the next scale using only features from the
+            adjacent preceding scale, enabling <strong>parallel training</strong>.
+            <br>
+            (2) <strong>Spatial-Markov attention</strong>: restricting each token's attention to a localized
+            neighborhood on adjacent scales, reducing complexity to <strong>linear $O(Nk)$</strong> and eliminating the
+            need for KV cache during inference.
+        </p>
+    </div>
 
-        <br /><br /><br />
-    </body>
+    <br />
+    <div class="container">
+        <div align="center">
+            <h2>Method</h2>
+        </div>
+        <hr />
+        <p align="center">
+            <img src="mvar-static/mvar-framework.png" style="width: 90%" />
+        </p>
+        <p>
+            <strong>(a) Scale-Markovian Trajectory:</strong> Unlike previous methods that depend on all prior scales
+            ($R_1, ..., R_{k-1}$), MVAR assumes that the current scale only depends on its immediate predecessor
+            ($R_{k-1}$). This decoupling allows us to train all scales in parallel rather than sequentially,
+            significantly lowering GPU memory consumption.
+            <br /><br />
+            <strong>(b) Spatial-Markovian Attention:</strong> We restrict the receptive field of each visual token to a
+            localized $k \times k$ neighborhood at the corresponding position of the adjacent scale. This sparse
+            attention mechanism avoids the quadratic explosion of global self-attention while effectively capturing
+            necessary spatial priors.
+            <br /><br />
+            <strong>(c) KV-Cache Free Inference:</strong> Due to the Markovian nature of our spatial attention, the
+            model does not need to store long-term token dependencies. This allows for extremely memory-efficient
+            sampling without the heavy overhead of Key-Value caches.
+        </p>
+        <p align="center">
+            <img src="mvar-static/mvar-ablation.png" style="width: 85%" />
+        </p>
+    </div>
+
+    <br />
+    <div class="container">
+        <div align="center">
+            <h2>Experimental Results</h2>
+        </div>
+        <hr />
+        <ul>
+            <li><strong>State-of-the-Art Performance:</strong> MVAR achieves comparable or superior FID scores on
+                ImageNet 256x256 compared to VAR and other diffusion-based models.</li>
+            <p align="center">
+                <img src="mvar-static/mvar-table-1.png" style="width: 80%" />
+            </p>
+            <li><strong>Efficiency:</strong> MVAR reduces the average GPU memory footprint by
+                <strong>3.0&times;</strong>, making the training of large-scale generative models accessible on
+                consumer-grade hardware like RTX 4090.
+            </li>
+            <p align="center">
+                <img src="mvar-static/mvar-table-2.png" style="width: 80%" />
+            </p>
+        </ul>
+
+    </div>
+
+    <br /><br />
+    <div class="container">
+        <div align="center">
+            <h2>References</h2>
+        </div>
+        <hr />
+        <p>
+            [1] Tian K, Jiang Y, Yuan Z, et al. Visual autoregressive modeling: Scalable image generation via next-scale prediction[J]. Advances in neural information processing systems, 2024, 37: 84839-84865.
+            <br />
+            [2] Hassani A, Walton S, Li J, et al. Neighborhood attention transformer[C]//Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2023: 6185-6194.
+        </p>
+    </div>
+
+    <br /><br /><br />
+</body>
+
 </html>
