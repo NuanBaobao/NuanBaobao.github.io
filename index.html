@@ -124,47 +124,50 @@
 
               <tr onmouseout="mvar_stop()" onmouseover="mvar_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='mvar_image'><video width=100% height=100% muted autoplay loop>
-                        <!-- <source src="flash3d-static/videos/website_video.mov" type="video/mp4">
-                        Your browser does not support the video tag.
-
-                      </video></div> -->
+                  <div class="one" style="position:relative; width:160px;">
                     <img src='mvar-static/website_teaser_image.jpeg' width="160">
+
+                    <div class="two" id='mvar_image'
+                      style="position:absolute; top:0; left:0; width:100%; opacity:0; transition: opacity .2s ease-in-out;">
+                      <video width=100% muted autoplay loop>
+                        <source src="mvar-static/teaser_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
                   </div>
+
                   <script type="text/javascript">
                     function mvar_start() {
                       document.getElementById('mvar_image').style.opacity = "1";
                     }
-
                     function mvar_stop() {
                       document.getElementById('mvar_image').style.opacity = "0";
                     }
-                    mvar_stop()
                   </script>
                 </td>
+
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://szymanowiczs.github.io/splatter-image">
-                    <span class="papertitle">MVAR: Ultra-Fast Single-View 3D Reconstruction</span>
+                  <a href="https://arxiv.org/abs/2505.12742">
+                    <span class="papertitle">MVAR: Visual Autoregressive Modeling with Scale and Spatial Markovian
+                      Conditioning</span>
                   </a>
                   <br>
-                  <strong>Jinhua Zhang</strong>*,
-                  <a href="https://scholar.google.com/citations?user=CsVTBJoAAAAJ">Wei Long</a>*,
-                  <a href="https://scholar.google.com/citations?hl=en&user=IqrXj74AAAAJ">Minghao Han</a>*,
+                  <strong>Jinhua Zhang</strong>,
+                  <a href="https://scholar.google.com/citations?user=CsVTBJoAAAAJ">Wei Long</a>,
+                  <a href="https://scholar.google.com/citations?hl=en&user=IqrXj74AAAAJ">Minghao Han</a>,
                   <a href="https://scholar.google.com/citations?user=q4uALoAAAAAJ">Weiyi You</a>,
-                  <a href="https://scholar.google.com/citations?user=-kSTt40AAAAJ">Shuhang Gu</a>,
+                  <a href="https://scholar.google.com/citations?user=-kSTt40AAAAJ">Shuhang Gu</a>
                   <br>
                   <em>ICLR</em>, 2026
                   <br>
-                  <a href="https://github.com/CVL-UESTC/MVAR">code</a>
-                  /
-                  <a href="https://www.robots.ox.ac.uk/~vgg/research/flash3d/">project page</a>
-                  /
+                  <a href="https://github.com/CVL-UESTC/MVAR">code</a> /
+                  <a href="https://labshuhanggu.github.io/MVAR/">project page</a> /
                   <a href="https://arxiv.org/abs/2505.12742">arXiv</a>
                   <p></p>
                   <p>
-                    MVAR redefines visual autoregression by applying Markovian constraints to scale and spatial, 
-                    slashing training memory by 3x and enabling KV-cache-free inference without sacrificing performance..
+                    MVAR redefines visual autoregression by applying Markovian constraints to scale and spatial,
+                    slashing training memory by 3.0x and enabling KV-cache-free inference without sacrificing
+                    performance.
                   </p>
                 </td>
               </tr>
