@@ -1,1 +1,0 @@
-To view the models in this supplement, open a terminal in this directory and run `python3 -m http.server`. Then, navigate to `http://localhost:8000/` in your browser.
