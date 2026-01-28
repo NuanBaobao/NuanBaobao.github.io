@@ -137,10 +137,11 @@
         <hr />
         <ul>
             <li><strong>State-of-the-Art Performance:</strong> MVAR achieves comparable or superior FID scores on
-                ImageNet 256x256 compared to VAR and other diffusion-based models.</li>
+                ImageNet 256&times;256 compared to VAR and other diffusion-based models.</li>
             <p align="center">
                 <img src="mvar-static/mvar-table-1.png" style="width: 80%" />
             </p>
+
             <li><strong>Efficiency:</strong> MVAR reduces the average GPU memory footprint by
                 <strong>3.0&times;</strong>, making the training of large-scale generative models accessible on
                 consumer-grade hardware like RTX 4090.
@@ -148,8 +149,30 @@
             <p align="center">
                 <img src="mvar-static/mvar-table-2.png" style="width: 80%" />
             </p>
-        </ul>
 
+            <li><strong>Visual Results:</strong> MVAR demonstrates high-fidelity image generation capabilities. Below
+                are selected samples generated on ImageNet 256&times;256, showcasing the diversity and structural
+                coherence of our Markovian modeling.</li>
+            <p align="center">
+                <img src="mvar-static/visual_results.png" style="width: 100%" />
+            </p>
+        </ul>
+    </div>
+
+    <br /><br />
+    <div class="container">
+        <div align="center">
+            <h2>Citation</h2>
+        </div>
+        <hr class="hr-tight" />
+        <pre
+            style="background:#f6f6f6; padding:15px; border-radius:10px; font-size:14px; white-space:pre-wrap; font-family: 'Courier New', Courier, monospace;">
+@article{zhang2025mvar,
+  title   = {MVAR: Visual Autoregressive Modeling with Scale and Spatial Markovian Conditioning},
+  author  = {Zhang, Jinhua and Long, Wei and Han, Minghao and You, Weiyi and Gu, Shuhang},
+  journal = {arXiv preprint arXiv:2505.12742},
+  year    = {2025}
+}</pre>
     </div>
 
     <br /><br />
@@ -159,9 +182,11 @@
         </div>
         <hr />
         <p>
-            [1] Tian K, Jiang Y, Yuan Z, et al. Visual autoregressive modeling: Scalable image generation via next-scale prediction[J]. Advances in neural information processing systems, 2024, 37: 84839-84865.
+            [1] Tian K, Jiang Y, Yuan Z, et al. Visual autoregressive modeling: Scalable image generation via next-scale
+            prediction[J]. Advances in neural information processing systems, 2024, 37: 84839-84865.
             <br />
-            [2] Hassani A, Walton S, Li J, et al. Neighborhood attention transformer[C]//Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2023: 6185-6194.
+            [2] Hassani A, Walton S, Li J, et al. Neighborhood attention transformer[C]//Proceedings of the IEEE/CVF
+            conference on computer vision and pattern recognition. 2023: 6185-6194.
         </p>
     </div>
 
