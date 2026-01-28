@@ -111,7 +111,7 @@
                   <a href="https://openreview.net/profile?id=~Xinchun_Ji2">Xinchun Ji</a>,
                   <a href="https://scholar.google.com/citations?user=-kSTt40AAAAJ">Shuhang Gu</a>
                   <br>
-                  <em>Arxiv</em>, 2026
+                  <em>arXiv</em>, 2026
                   <br>
                   <a href="https://github.com/CVL-UESTC/IDESplat">code</a> /
                   <a href="https://arxiv.org/abs/2601.03824">arXiv</a>
@@ -161,7 +161,7 @@
                   <a href="https://github.com/CVL-UESTC/TVQ-RAP">code</a> /
                   <a href="https://arxiv.org/abs/2509.23774">arXiv</a>
                   <p></p>
-                  <p>TVQ&amp;RAP enhances generative super-resolution by using texture-focused vector quantization to reduce error and a reconstruction-aware strategy to optimize index prediction directly via image-level supervision.</p>
+                  <p>TVQ&amp;RAP uses texture-specific VQ and reconstruction-aware prediction to slash quantization errors and improve super-resolution fidelity.</p>
                 </td>
               </tr>
 
@@ -207,6 +207,51 @@
                   <a href="https://arxiv.org/abs/2505.12742">arXiv</a>
                   <p></p>
                   <p>MVAR redefines visual autoregression by applying Markovian constraints to scale and spatial, slashing training memory by 3.0x and enabling KV-cache-free inference without sacrificing performance.</p>
+                </td>
+              </tr>
+
+              <!-- VCD -->
+              <tr onmouseout="vcd_stop()" onmouseover="vcd_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one" style="position:relative; width:190px;">
+                    <img src="images/vcd.png" width="190" alt="VCD teaser">
+                    <div class="two" id="vcd_image"
+                      style="position:absolute; top:0; left:0; width:100%; opacity:0; transition: opacity .2s ease-in-out;">
+                      <video width="100%" muted autoplay loop>
+                        <source src="images/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+
+                  <script type="text/javascript">
+                    function vcd_start() {
+                      document.getElementById('vcd_image').style.opacity = "1";
+                    }
+                    function vcd_stop() {
+                      document.getElementById('vcd_image').style.opacity = "0";
+                    }
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2505.20984">
+                    <span class="papertitle">Generative Image Compression by Estimating Gradients of the Rate-variable Feature Distribution</span>
+                  </a>
+                  <br>
+                  <a href="https://scholar.google.com/citations?hl=en&user=IqrXj74AAAAJ">Minghao Han</a>,
+                  <a href="https://scholar.google.com/citations?user=q4uALoAAAAAJ">Weiyi You</a>,
+                  <strong>Jinhua Zhang</strong>,
+                  <a href="https://scholar.google.com/citations?user=DH1CJqkAAAAJ&hl=zh-CN">Leheng Zhang</a>,
+                  <a href="https://scholar.google.com/citations?user=C7iZbYMAAAAJ&hl=zh-CN">Ce Zhu</a>,
+                  <a href="https://scholar.google.com/citations?user=-kSTt40AAAAJ">Shuhang Gu</a>
+                  <br>
+                  <em>arXiv</em>, 2026
+                  <br>
+                  <a href="https://github.com/CVL-UESTC/VCD">code</a> /
+                  <a href="https://arxiv.org/abs/2505.20984">arXiv</a>
+                  <p></p>
+                  <p>VCD reinterprets image compression as a stochastic forward diffusion path, enabling high-fidelity reconstruction via direct SDE reversal with minimal sampling steps.</p>
                 </td>
               </tr>
 
