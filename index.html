@@ -71,6 +71,56 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <tr onmouseout="idesplat_stop()" onmouseover="idespalt_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one" style="position:relative; width:180px;">
+                    <img src='images/IDESplat.png' width="180">
+
+                    <div class="two" id='idespalt_image'
+                      style="position:absolute; top:0; left:0; width:100%; opacity:0; transition: opacity .2s ease-in-out;">
+                      <video width=100% muted autoplay loop>
+                        <source src="images/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+
+                  <script type="text/javascript">
+                    function idespalt_start() {
+                      document.getElementById('idespalt_image').style.opacity = "1";
+                    }
+                    function idespalt_stop() {
+                      document.getElementById('idespalt').style.opacity = "0";
+                    }
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2601.03824">
+                    <span class="papertitle">IDESplat: Iterative Depth Probability Estimation for Generalizable 3D Gaussian Splatting</span>
+                  </a>
+                  <br>
+                  <a href="https://scholar.google.com/citations?user=CsVTBJoAAAAJ">Wei Long</a>,
+                  <a href="https://scholar.google.com/citations?user=rvVphXoAAAAJ&hl=zh-CN&oi=ao">Haifeng Wu</a>,
+                  <a href="https://openreview.net/profile?id=~Shiyin_Jiang1">Shiyin Jiang</a>,
+                  <strong>Jinhua Zhang</strong>,
+                  <a href="https://openreview.net/profile?id=~Xinchun_Ji2">Xinchun Ji</a>,
+                  <a href="https://scholar.google.com/citations?user=-kSTt40AAAAJ">Shuhang Gu</a>
+                  <br>
+                  <em>Arxiv</em>, 2026
+                  <br>
+                  <a href="https://github.com/CVL-UESTC/IDESplat">code</a> /
+                  <!-- <a href="https://NuanBaobao.github.io/MVAR">project page</a> / -->
+                  <a href="https://arxiv.org/abs/2601.03824">arXiv</a>
+                  <p></p>
+                  <p>
+                    IDESplat achieves SOTA feed-forward 3D reconstruction via iterative depth boosting with extreme parameter and memory efficiency.
+                  </p>
+                </td>
+              </tr>
+
+
+
               <tr onmouseout="mvar_stop()" onmouseover="mvar_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one" style="position:relative; width:180px;">
