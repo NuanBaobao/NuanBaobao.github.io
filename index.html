@@ -255,6 +255,56 @@
                 </td>
               </tr>
 
+             <!-- PerLDiff -->
+              <tr onmouseout="perldiff_stop()" onmouseover="perldiff_start()" bgcolor="#ffffd0">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one" style="position:relative; width:190px;">
+                    <img src="images/perldiff.png" width="190" alt="perldiff teaser">
+                    <div class="two" id="perldiff_image"
+                      style="position:absolute; top:0; left:0; width:100%; opacity:0; transition: opacity .2s ease-in-out;">
+                      <video width="100%" muted autoplay loop>
+                        <source src="images/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+
+                  <script type="text/javascript">
+                    function perldiff_start() {
+                      document.getElementById('perldiff_image').style.opacity = "1";
+                    }
+                    function perldiff_stop() {
+                      document.getElementById('perldiff_image').style.opacity = "0";
+                    }
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Zhang_PerLDiff_Controllable_Street_View_Synthesis_Using_Perspective-Layout_Diffusion_Model_ICCV_2025_paper.html">
+                    <span class="papertitle">PerLDiff: Controllable Street View Synthesis Using Perspective-Layout Diffusion Model</span>
+                  </a>
+                  <br>
+                  <strong>Jinhua Zhang*</strong>,
+                  <a href="https://scholar.google.com/citations?user=73JaDUQAAAAJ&hl=zh-CN&oi=sra">Hualian Sheng</a>*,
+                  <a href="https://scholar.google.com/citations?user=LMVeRVAAAAAJ&hl=zh-CN&oi=sra">Sijia Cai</a>,
+                  <a href="https://scholar.google.com/citations?user=VQp_ye4AAAAJ&hl=zh-CN&oi=sra">Bing Deng</a>,
+                  <a href="https://scholar.google.com/citations?user=-Hv_dPkAAAAJ&hl=zh-CN">Qiao Liang</a>,
+                  <a href="https://scholar.google.com/citations?user=yjG4Eg4AAAAJ&hl=zh-CN">Wen Li</a>,
+                  <a href="https://scholar.google.com/citations?user=PE4xMlkAAAAJ&hl=zh-CN">Ying Fu</a>,
+                  <a href="https://scholar.google.com/citations?user=T9AzhwcAAAAJ&hl=zh-CN">Jieping Ye</a>,
+                  <a href="https://scholar.google.com/citations?user=-kSTt40AAAAJ&hl=zh-CN">Shuhang Gu</a>
+                  <br>
+                  <em>ICCV</em>, 2025
+                  <br>
+                  <a href="https://github.com/CVL-UESTC/PerLDiff">code</a> /
+                  <a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Zhang_PerLDiff_Controllable_Street_View_Synthesis_Using_Perspective-Layout_Diffusion_Model_ICCV_2025_paper.pdf">paper</a> /
+                  <a href="https://arxiv.org/abs/2407.06109">arXiv</a>
+                  <p></p>
+                  <p>PerLDiff leverages 3D geometric information within diffusion models to enable robust and precise object-level control for street view image generation.</p>
+                </td>
+              </tr>
+
+
             </tbody>
           </table>
 
