@@ -73,6 +73,47 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <!-- VE-Loss -->
+              <tr onmouseout="veloss_stop()" onmouseover="veloss_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one" style="position:relative; width:160px;">
+                    <img src="images/VE-loss.png" width="160" alt="VE-Loss teaser">
+                    <div class="two" id="veloss_image"
+                      style="position:absolute; top:0; left:0; width:100%; opacity:0; transition: opacity .2s ease-in-out;">
+                      <video width="100%" muted autoplay loop>
+                        <source src="images/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+
+                  <script type="text/javascript">
+                    function veloss_start() {
+                      document.getElementById('veloss_image').style.opacity = "1";
+                    }
+                    function veloss_stop() {
+                      document.getElementById('lveoss_image').style.opacity = "0";
+                    }
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2603.21085">
+                    <span class="papertitle">Taming Sampling Perturbations with Variance Expansion Loss
+                      for Latent Diffusion Models</span>
+                  </a>
+                  <br>
+                  Qifan Li, Xinyu Zhou, <strong>Jinhua Zhang</strong>, Weiyi You, Shuhang Gu
+                  <br>
+                  <em>CVPR</em>, 2026
+                  <br>
+                  <a href="https://github.com/CVL-UESTC/VE-Loss">code</a> /
+                  <a href="https://arxiv.org/abs/2603.21085">arXiv</a>
+                  <p></p>
+                  <p>VE-Loss improves latent diffusion by making the latent space more robust to sampling noise.</p>
+                </td>
+              </tr>
+
               <!-- IDESplat -->
               <tr onmouseout="idesplat_stop()" onmouseover="idesplat_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
